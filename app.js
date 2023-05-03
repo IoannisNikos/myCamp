@@ -28,7 +28,7 @@ main().catch(err => console.log(err));
 // 'mongodb://127.0.0.1:27017/yelpCamp'
 
 async function main() {
-    mongoose.connect('mongodb://127.0.0.1:27017/yelpCamp');
+    mongoose.connect(dbUrl);
     console.log("Established Connection with Mongo")
 }
 
