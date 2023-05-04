@@ -32,7 +32,7 @@
                             <div id="campground-cards" class="row">
                                 <div class="col-md-4">
                                     <% if(campground.images.length) { %>
-                                        <img crossorigin="anonymous" class="img-fluid" alt=""
+                                        <img crossorigin="anonymous" class="img-fluid" id="thumbnailpic" alt=""
                                             src="<%=campground.images[0].url%>">
                                         <% } else { %>
                                             <img crossorigin="anonymous" class="img-fluid"
@@ -61,8 +61,7 @@
                             </div>
                         </div>
                         <%} %>
-
-
+                            <button type="button" id="myBtn" title="Go to top"></button>
             </main>
             <%- include('../partials/footer') %>
         </div>
@@ -79,6 +78,7 @@
         </script>
         <script src="/javascripts/searchBar.js"></script>
         <script src="/javascripts/clusterMap.js"></script>
+        <script src="/javascripts/scrollTop.js"></script>
 
 </body>
 
