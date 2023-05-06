@@ -41,7 +41,6 @@ const CampgroundSchema = new Schema(
       type: String,
       required: true,
       minlength: 4,
-      match: /^[a-zA-Z0-9]+$/,
     },
     location: {
       type: String,
