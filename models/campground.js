@@ -19,7 +19,6 @@ const CampgroundSchema = new Schema(
       type: String,
       required: true,
       minlength: 2,
-      match: /^[a-zA-Z0-9]+$/,
     },
     images: [ImageSchema],
     geometry: {
